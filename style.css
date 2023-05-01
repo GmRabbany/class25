@@ -1,0 +1,272 @@
+body{
+    font-family: 'Jost', sans-serif;
+
+}
+
+
+.dbtn{
+    background: rgb(24, 24, 255);
+    color: #fff;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 8px 15px;
+    margin: 20px 0;
+    
+    position: relative;
+    z-index: 1;
+
+}
+
+.dbtn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(24, 24, 255);
+   
+    color: #fff !important;
+    border-radius: 30px;
+    height: 100%;
+    width: 0%;
+
+    z-index: -1;
+    transition: .4s;
+
+}
+.dbtn:hover::after{
+    width: 100%;
+   
+}
+
+.dbtn2{
+    background: #fff;
+    background: rgb(24, 24, 255);
+    
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 8px 15px;
+    margin: 20px 0;
+    
+    position: relative;
+    z-index: 1;
+
+}
+
+.dbtn2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(24, 24, 255);
+    color: #fff ;
+    border-radius: 30px;
+    height: 100%;
+    width: 0%;
+
+    z-index: -1;
+    transition: .4s;
+
+}
+.dbtn2:hover::after{
+    width: 100%;
+   
+}
+
+.pricing{
+    background-color: #f6f9fc;
+}
+.pricing-head{}
+.pricing-head h5{
+    text-transform: uppercase;
+    font-size: 19px;
+    color: #84b2f5;
+    font-weight: 400;
+}
+.pricing-head h1{
+    position: relative;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.pricing-head h1::after{
+    content: "";
+    position: absolute;
+    top: 133%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: blue;
+    width: 100px;
+    height: 2px;
+}
+
+
+.pricing-head p{
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 500;
+    color: #606060;
+}
+
+
+
+.pricing-item{
+    padding: 45px 70px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px 0px 0px 0px #ddd;
+
+    transition: .3s;
+}
+
+.pricing-item:hover{
+    background-color: #4949ff;
+    color: #fff;
+}
+.pricing-item:hover strong, .pricing-item:hover p{
+    color: #fff;
+    transition: .6s;
+}
+.pricing-item:hover .dbtn{
+    background-color: #fff;
+    color: #4949ff;
+   
+}
+.pricing-item strong{
+    font-size: 20px;
+    color: #898989;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.pricing-item h1{
+    padding: 10px 0 65px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.pricing-item p{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 20px;
+    color: #606060;
+    font-weight: 400;
+    line-height: 40px;
+}
+.pricing-item a{}
+
+
+
+
+
+
+/* buy section css */
+
+.buy{
+    background: url(./img/free-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 150px 0;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+}
+
+.buy::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(43, 43, 255, .6);
+    z-index: -1;
+}
+
+.buy h5{
+    margin: 20px 0;
+}
+.buy h1{
+    padding: 0 74px;
+    margin: 35px 0;
+    position: relative;
+}
+.buy h1::after{
+    content: "";
+    position: absolute;
+    top: 117%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    width: 125px;
+    height: 2px;
+}
+.buy p{
+    padding: 0 138px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px 0 40px 0;
+}
+.buy a{
+    background: #fff;
+    color: blue;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+/* subscribe css */
+
+.subscribe{
+    padding: 100px 0;
+    background-color: #f8f9fa;
+
+}
+.subscribe{}
+
+.sign-up{
+    background: #4949ff;
+    border-radius: 5px;
+    padding: 40px;
+    color: #fff;
+}
+.sign-up h2{
+    margin: 0 0 25px 0;
+}
+.sign-up p{
+    padding: 10px 300px 10px 0px;
+    font-size: 18px;
+}
+.sign-up form{}
+
+#exampleInputEmail1{
+    border-radius: 20px;
+    padding: 10px;
+}
+.sbtn{
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+}
+
+
+.get{
+    background: #fff;
+    box-shadow: 0px 0px 20px 6px #ddd;
+    padding: 50px;
+    text-align: start;
+    border-radius: 5px;
+    height: 295px;
+}
+.get h3{
+    font-size: 18px;
+    margin: 0 0 90px 0;
+    /* border-radius: 85px; */
+}
+.get .gbtn{
+    background: blue;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+}
